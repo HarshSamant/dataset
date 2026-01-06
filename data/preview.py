@@ -1,0 +1,8 @@
+import csv
+
+with open('dataset.csv', newline='') as file:
+    reader = csv.DictReader(file)
+    print("📊 DATASET PREVIEW\n")
+    for row in reader:
+        print(f"ID: {row['id']} | Name: {row['name']} | Marks: {row['marks']} | Course: {row['course']}")
+
